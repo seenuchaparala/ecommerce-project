@@ -1,5 +1,5 @@
 
-window.addEventListener('DOMContentLoaded', (e) => {
+document.addEventListener('DOMContentLoaded', (e) => {
   let slideIndex = 0;
 showSlides();
 
