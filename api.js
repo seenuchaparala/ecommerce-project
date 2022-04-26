@@ -1,4 +1,7 @@
+
+
 const serverData = async (input) => {
+    
     const options = {
         method: 'GET',
         headers: {
@@ -19,19 +22,18 @@ const serverData = async (input) => {
 const input = document.getElementById('searchValue');
 const submitBtn = document.getElementById('submit');
 const productCardHtml = document.getElementsByClassName('shop-item');
-input.addEventListener('keypress', async (event) => {
-    event.preventDefault();
-    if (event.key === 'Enter') {
-        await createProductCard();
-    }
-})
+// input.addEventListener('keypress', async (event) => {
+//     if (event.key === 'Enter') {
+//         await createProductCard();
+//     }
+// })
 submitBtn.addEventListener('click', async (event) =>{
     event.preventDefault();
     await createProductCard();
 })
 
 const createHtmlCard = (image, brand, description, price) => {
-    const htmlString = `<img class = "shop-item-image" src= ${image} alt="Denim Jeans" style="width:100%">
+    const htmlString = `<img class = "shop-item-image" src= ${image} alt="Denim Jeans" style="width:100px height:100px">
     <h1 class="shop-item-title">${brand}</h1>
     <p>${description}</p>
     <div class="shop-item-details">
@@ -50,6 +52,8 @@ const createProductCard = async () => {
         productCardHtml[i].innerHTML = createHtmlCard(thumb_image, brand, title, price);
     }
 }
+
+
 
     
 
