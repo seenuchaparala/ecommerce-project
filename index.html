@@ -13,19 +13,19 @@
     <link rel="stylesheet" href="./style.css">
     <script src="./index.js"></script>
     <script src="./store.js" defer></script>
-    <script src="./api.js" defer></script>
+    <!-- <script src="./api.js" defer></script> -->
     <title>Best Buy Store</title>
 </head>
 <body>
     <header class="header menu">
-        <img src="./images/BestBuy_Logo1.png" class="logo">
+        <a href="./index.html" style="background-color: yellow; color: black; font-weight: bold; font-style: normal;">FOREVER21</a>
         <span class="item">
             <a href="#" class="nav">Products</a>
-            <a href="#" class="nav">Services</a>
+            <a href="#" class="nav">sale</a>
             <a href="#" class="nav">Contact Us</a>
         </span>
         <span class="item">
-            <form action="/action_page.php">
+            <form action="#">
               <input type="text" placeholder="Enter Product name" name="search" id="searchValue">
               <button type="submit"><i class="fa fa-search" id="submit">Search</i></button>
             </form>
@@ -36,63 +36,63 @@
         <div class="slideshow-container">
             <div class="mySlides fade">
               <div class="numbertext">1 / 3</div>
-              <img src="./images/Slideshow1.jpg" style="width:100%">
-              <div class="text">Caption Text</div>
+              <img src="./images/AsiaHeritage.jpg" style="width:100%">
             </div>
           
             <div class="mySlides mySlides1 fade">
               <div class="numbertext">2 / 3</div>
               <img src="./images/Slideshow2.jpg" style="width:100%">
-              <div class="text">Caption Two</div>
+              
             </div>
           
             <div class="mySlides mySlides1 fade">
               <div class="numbertext">3 / 3</div>
-              <img src="./images/Slideshow3.jpg" style="width:100%">
-              <div class="text">Caption Three</div>
+              <img src="./images/Sunny.jpg" style="width:100%">
+              
             </div>
         
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
           </div>
           <br>
           <section class = "menu shop-items">
-            <span class="card item shop-item">
-              <img class = "shop-item-image" src="./images/Slideshow1.jpg" alt="Denim Jeans" style="width:100%">
-              <h1 class="shop-item-title">Tailored Jeans</h1>
-              <p>Some text about the jeans..</p>
+            <span class="card item shop-item1">
+              <img class = "shop-item-image" src="./images/Mens_caps.jpg" alt="Mens Caps" style="width:100%">
+              <h1 class="shop-item-title">Mens Caps</h1>
+              <!-- <p>Mens caps on sale</p> -->
               <div class="shop-item-details">
-                <p class="shop-item-price">$19.99</p>
-                <p><button class="btn btn-primary shop-item-button" type="button">Add to Cart</button></p>
+                <p class="shop-item-price"></p>
+                <p><button class="btn btn-primary shop-item-button" id="caps" type="button">Shop Caps</button></p>
               </div>
             </span>
-            <span class="card item shop-item">
-              <img class = "shop-item-image" src="./images/Slideshow1.jpg" alt="Denim Jeans" style="width:100%">
-              <h1 class="shop-item-title">Tailored Jeans</h1>
-              <p>Some text about the jeans..</p>
+            <span class="card item shop-item1">
+              <img class = "shop-item-image" src="./images/Rings.jpg" alt="Rings" style="width:100%">
+              <h1 class="shop-item-title">Rings</h1>
+              <!-- <p class = "shop-item-description">Rings on sale</p> -->
               <div class="shop-item-details">
-                <p class="shop-item-price">$19.99</p>
-                <p><button class="btn btn-primary shop-item-button" type="button">Add to Cart</button></p>
+                <p class="shop-item-price"></p>
+                <p><button class="btn btn-primary shop-item-button" id= "rings" type="button">Shop Rings</button></p>
               </div>
             </span>
-            <span class="card item shop-item">
-              <img class = "shop-item-image" src="./images/Slideshow1.jpg" alt="Denim Jeans" style="width:100%">
-              <h1 class="shop-item-title">Tailored Jeans</h1>
-              <p>Some text about the jeans..</p>
+            <span class="card item shop-item1">
+              <img class = "shop-item-image" src="./images/GiftCard.jpg" alt="Gift cards" style="width:100%">
+              <h1 class="shop-item-title">Gift cards</h1>
+              <!-- <p class = "shop-item-description">Gift cards on sale</p> -->
               <div class="shop-item-details">
-                <p class="shop-item-price">$19.99</p>
-                <p><button class="btn btn-primary shop-item-button" type="button">Add to Cart</button></p>
+                <p class="shop-item-price"></p>
+                <p><button class="btn btn-primary shop-item-button" id= "gifts" type="button">Shop Gift Cards</button></p>
               </div>
             </span>
-            <span class="card item shop-item">
-              <img class = "shop-item-image" src="./images/Slideshow1.jpg" alt="Denim Jeans" style="width:100%">
-              <h1 class="shop-item-title">Tailored Jeans</h1>
-              <p>Some text about the jeans..</p>
+            <span class="card item shop-item1">
+              <img class = "shop-item-image" src="./images/Sheets.jpg" alt="Sheets" style="width:100%">
+              <h1 class="shop-item-title">Fitted sheets</h1>
+              <!-- <p class = "shop-item-description">Sheets on sale</p> -->
               <div class="shop-item-details">
-                <p class="shop-item-price">$19.99</p>
-                <p><button class="btn btn-primary shop-item-button" type="button">Add to Cart</button></p>
+                <p class="shop-item-price"></p>
+                <p><button class="btn btn-primary shop-item-button" id= "sheets" type="button">Shop Sheets</button></p>
               </div>
             </span>
+          </section>
+          <section class = "menu shop-items">
+            
           </section>
           <section class="container content-section">
             <h2 class="section-header">CART</h2>
