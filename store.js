@@ -5,7 +5,6 @@
 // }
 
 const input = document.getElementById('searchValue');
-console.log(input);
 const submitBtn = document.getElementById('submit');
 const productCardHtml = document.getElementsByClassName('shop-items')[1];
 const scrollToProduct = document.getElementsByClassName('shop-item-button');
@@ -62,7 +61,6 @@ function quantityChanged(event) {
 function addToCartClicked(event) {
   const button = event.target;
   const shopItem = button.parentElement.parentElement.parentElement;
-  console.log(shopItem);
   const description = shopItem.getElementsByClassName('shop-item-description')[0].innerText;
   const price = shopItem.getElementsByClassName('shop-item-price')[0].innerText;
   const imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src;
@@ -169,6 +167,7 @@ input.addEventListener('keypress', async (event) => {
 submitBtn.addEventListener('click', async (event) => {
   event.preventDefault();
   const i = input.value.replace(/\s+/g, '');
+  console.log(i)
   await createProductCard(i);
   ready();
 });
