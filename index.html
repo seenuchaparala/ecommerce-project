@@ -11,25 +11,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@1,600&family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
     <script src="./index.js"></script>
     <script src="./store.js" defer></script>
     <!-- <script src="./api.js" defer></script> -->
     <title>Best Buy Store</title>
 </head>
 <body>
-    <header class="header menu">
-        <a href="./index.html" style="background-color: yellow; color: black; font-weight: bold; font-style: normal;">FOREVER21</a>
-        <span class="item">
-            <a href="#" class="nav">Products</a>
-            <a href="#" class="nav">sale</a>
-            <a href="#" class="nav">Contact Us</a>
-        </span>
-        <span class="item">
-            <form action="#">
-              <input type="text" placeholder="Enter Product name" name="search" id="searchValue">
-              <button type="submit"><i class="fa fa-search" id="submit">Search</i></button>
-            </form>
-        </span>
+    <header>
+        <div class="logo topnav"><a href="./index.html" style="background-color: yellow; color: black; font-weight: bold; font-style: normal; float: none;">FOREVER21</a></div>
+        <div class="topnav">
+            <a href="#" class="active">Products</a>
+            <a href="#">Sale</a>
+            <a href="#">Contact Us</a>
+            <div class="search-container">
+              <form action="#">
+                <input type="text" placeholder="Search Product" name="search" id="searchValue">
+                <button type="submit"><i id="submit"></i>Search</button>
+              </form>
+          </div>
+        </div>
+        
     </header>
     
     <section>

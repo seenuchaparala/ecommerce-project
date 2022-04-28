@@ -34,6 +34,7 @@ function ready() {
   }
 
   document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked);
+  window.scrollTo(0, document.body.scrollHeight);
 }
 
 function purchaseClicked() {
@@ -161,7 +162,6 @@ input.addEventListener('keypress', async (event) => {
     event.preventDefault();
     const i = event.target.value.replace(/\s+/g, '');
     await createProductCard(i);
-    window.scrollTo(0, document.body.scrollHeight);
     ready();
   }
 });
@@ -170,7 +170,6 @@ submitBtn.addEventListener('click', async (event) => {
   event.preventDefault();
   const i = input.value.replace(/\s+/g, '');
   await createProductCard(i);
-  window.scrollTo(0, document.body.scrollHeight);
   ready();
 });
 
