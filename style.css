@@ -170,6 +170,7 @@ h1 {
     font-size: xx-large;
     font-family: 'Andada Pro', serif;
     text-align: center;
+    margin: auto;
 }
 
 .shop-item-image {
@@ -306,6 +307,7 @@ figcaption {
     width: 100%;
     font-size: 18px;
     border-radius: 12px;
+    margin-top: 5px;
   }
   
   .card button:hover {
@@ -372,12 +374,14 @@ figcaption {
   border-radius: 10px;
 }
 
-btn-danger {
+.btn-danger {
   color: white;
   background-color: #EB5757;
   border: none;
   border-radius: .3em;
   font-weight: bold;
+  position: relative;
+  left: 100px;
 }
 
 .btn-danger:hover {
@@ -430,6 +434,8 @@ btn-danger {
   border-radius: 18px;
   font-family: 'Andada Pro', serif;
   background-color: #cce2eb;
+  position: relative;
+  top: -15px;
 } 
 
 .btn-purchase:hover {
@@ -444,7 +450,6 @@ content-section {
 }
 
 .container {
-  max-width: 450px;
   margin: 0 auto;
   padding: 0 1.5em;
   background-color: #dacceb;
@@ -457,4 +462,9 @@ content-section {
   color: #333;
   text-align: center;
   font-size: 2.5em;
+}
+
+.text-center {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
 }

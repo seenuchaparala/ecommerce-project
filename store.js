@@ -1,9 +1,3 @@
-// if (document.readyState == 'loading'){
-//     document.addEventListener('DOMContentLoaded', ready)
-// } else {
-//     ready()
-// }
-
 const input = document.getElementById('searchValue');
 const submitBtn = document.getElementById('submit');
 const productCardHtml = document.getElementsByClassName('shop-items')[1];
@@ -74,9 +68,10 @@ function addItemToCart(title, price, imageSrc) {
   cartRow.classList.add('cart-row');
   const cartItems = document.getElementsByClassName('cart-items')[0];
   const cartItemNames = cartItems.getElementsByClassName('cart-item-image');
+  const cartQuantity = document.getElementsByClassName('cart-quantity-input');
   for (let i = 0; i < cartItemNames.length; i++) {
     if (cartItemNames[i].src === imageSrc) {
-      alert('This item is already in the cart');
+      cartQuantity[i].value = parseInt(cartQuantity[i].value, 10) + 1;
       return;
     }
   }
@@ -155,6 +150,7 @@ const createProductCard = async (input) => {
     productCardHtml.appendChild(productDiv);
   }
 };
+
 input.addEventListener('keypress', async (event) => {
   if (event.key === 'Enter') {
     event.preventDefault();
@@ -167,7 +163,6 @@ input.addEventListener('keypress', async (event) => {
 submitBtn.addEventListener('click', async (event) => {
   event.preventDefault();
   const i = input.value.replace(/\s+/g, '');
-  console.log(i)
   await createProductCard(i);
   ready();
 });
