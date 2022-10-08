@@ -20,6 +20,8 @@ Each product card has an 'Add to cart' button, and clicking this button adds the
 References:
 https://www.w3schools.com/ 
 
-![image](https://user-images.githubusercontent.com/22206367/194721693-e8706565-7bc7-48b4-8a49-3c6d17ddb104.png)
+![image](https://user-images.githubusercontent.com/22206367/194721799-eb161efd-68aa-4da1-8f56-90f8dc4a9dca.png)
+
+
 
 ![image](https://user-images.githubusercontent.com/22206367/194721738-8efd4307-100c-4841-adb2-12bda435d4b1.png)
